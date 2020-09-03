@@ -1,12 +1,12 @@
 <?php
 	$usuariosOnline = Painel::listarUsuariosOnline();
 
-	$pegarVisitasTotais = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas`");
+	$pegarVisitasTotais = MySql::connect()->prepare("SELECT * FROM `tb_admin.visitas`");
 	$pegarVisitasTotais->execute();
 
 	$pegarVisitasTotais = $pegarVisitasTotais->rowCount();
 
-	$pegarVisitasHoje = MySql::conectar()->prepare("SELECT * FROM `tb_admin.visitas` WHERE dia = ?");
+	$pegarVisitasHoje = MySql::connect()->prepare("SELECT * FROM `tb_admin.visitas` WHERE dia = ?");
 	$pegarVisitasHoje->execute(array(date('Y-m-d')));
 
 	$pegarVisitasHoje = $pegarVisitasHoje->rowCount();
@@ -86,7 +86,7 @@
 		</div><!--row-->
 
 		<?php
-			$usuariosPainel = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios`");
+			$usuariosPainel = MySql::connect()->prepare("SELECT * FROM `tb_admin.usuarios`");
 			$usuariosPainel->execute();
 			$usuariosPainel = $usuariosPainel->fetchAll();
 			foreach ($usuariosPainel as $key => $value) {

@@ -8,7 +8,7 @@
 		}
 		
 		public static function get($path,$arg){
-			if(empty($_POST)){
+			//if(empty($_POST)){
 				$url = @$_GET['url'];
 
 			if($path == ''){
@@ -57,7 +57,7 @@
 				}
 
 				}
-			}
+			//}
 		}
 
 

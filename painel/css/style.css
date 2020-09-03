@@ -4,7 +4,10 @@
 	box-sizing: border-box;
 	font-family: "Open Sans";
 }
-
+.w33{
+	width: 33.3%;
+	float: left;
+}
 input[type=number]{
 	margin-top: 8px;
 }
@@ -443,7 +446,7 @@ a.btn.order{background: #0091ea;}
 
 .box-content form input[type=text],
 .box-content form input[type=password],
-.box-content form input[type=number]
+.box-content form input[type=email]
 {
 	margin-top:8px;
 	font-size: 16px;
@@ -464,7 +467,7 @@ a.btn.order{background: #0091ea;}
 	height: 150px;
 	border: 1px solid #ccc;
 	padding: 8px;
-	resize: vertical;
+	
 }
 
 .box-content form select{
@@ -724,6 +727,36 @@ td.day-selected{
 	font-size: 20px;
 	padding:0 8px;
 }
+/*estilisação dos elemntos de cursos*/
+div.curso{
+	padding: 10px;
+	background-color: white;
+	border: 2px solid  #E1E1E1;
+	height: 100%;
+	max-height: 420px;
+}
+div.curso h2{
+	padding: 10px;
+	font-size: 18px;
+	font-weight: lighter;
+	border-bottom: 1px solid #ccc;
+}
+div.curso a{
+	background-color: #4caf50;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+div.img{
+	height: 150px;
+	padding: 0 10px;
+}
+div.img img{
+	width: 100%;
+	height: 100%;
+	
+}
+
 
 @media screen and (max-width: 1024px){
 	.box-single-wraper{

@@ -10,5 +10,310 @@
 	margin: 0 auto;
 	padding: 0 2%;
 }
-
+.box{
+	margin-top: 10px;
+	padding: 30px;
+	background-color: white;
+}
+.box1{
+	padding: 10px;
+	background-color: white;
+}
+.w50{
+	width: 50%;
+	float: left;
+}
+.w33{
+	width: 33.3%;
+	float: left;
+}
+.w25{
+	width: 25%;
+	float: left;
+}
 .clear{clear: both;}
+body{
+	background-color: rgb(233, 233, 233);
+}
+header{
+	background-color: #1565c0;
+	padding: 10px ;
+}
+div.logo{
+	float: left;
+}
+div.logo a{
+	color:white;
+	text-decoration: none;
+	font-size: 24px;
+}
+nav.desktop{
+	float: right;
+}
+nav.desktop ul li{
+	display: inline-block;
+	padding-top: 5px;
+}
+nav.desktop li a{
+	padding: 0 15px;
+	color: white;
+	text-decoration: none;
+}
+nav.desktop li a:hover{
+	text-decoration: underline;
+}
+.box-login{
+	width: 100%;
+	max-width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.box-login form{
+	width: 100%;
+	background-color: #1e88e5;
+	padding: 10px;
+	border-radius: 10px;
+}
+.box-login form h2{
+	padding: 10px;
+	color: white;
+	font-weight: lighter;
+}
+.box-login form input{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 10px;
+	border: 0;
+	border-radius: 10px;
+}
+.box-login form input[type=submit]{
+	width: 200px;
+	padding: 10px 10px;
+	border: 0;
+	border-radius: 10px;
+	background-color: #1c8d22;
+	font-size: 16px;
+	color: white;
+}
+.box-login form input[type=submit]:hover{
+	background-color: #07910e;
+	border: 1px solid #024d06;
+	cursor: pointer;
+}
+div.curso{
+	padding: 10px;
+	background-color: white;
+	border: 5px solid  #e9e9e9;
+	height: 100%;
+	max-height: 420px;
+	margin-top: 10px;
+}
+div.curso h2{
+	padding: 10px;
+	font-size: 18px;
+	font-weight: lighter;
+	border-bottom: 1px solid #ccc;
+}
+div.curso a{
+	background-color: #4caf50;
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+}
+div.img{
+	height: 150px;
+	padding: 0 10px;
+}
+div.img img{
+	width: 100%;
+	height: 100%;
+	
+}
+div.cursos h2{
+	font-size: 22px;
+	font-weight: normal;
+}
+/*curso single*/
+div.apresentacao h2{
+	margin-top: 20px;
+}
+div.apresentacao p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div.apresentacao a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+div.botao{
+	width: 100%;
+	padding: 10px;
+	margin: 60px auto;
+	width: 100%;
+	max-width: 400px;
+	background-color: #4caf50;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+div.video{
+	width: 885px;
+	height: 500px;
+	margin: 15px auto;
+}
+div.video iframe{
+	width: 100%;
+	height: 100%;
+}
+div.modulo{
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	border: 5px solid #e9e9e9;
+	border-radius: 10px;
+	height: 250px;
+}
+div.pacote{
+	width: 120px;
+	height: 120px;
+	background-color: #e9e9e9;
+	border-radius: 50%;
+	margin: 0 auto;
+
+}
+div.pacote img{
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+div.modulo h3{
+	text-align: center;
+	padding: 10px;
+}
+/*aulas*/
+div.menu{
+	width: 200px;
+	height: 580px;
+	background-color: #002753;
+	float: left;
+	overflow-y: auto;
+}
+div#modulo h2{
+	width: 100%;
+	padding: 5px 10px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-bottom: 1px solid white;
+	background-color: #1565C0;
+}
+div.modulo-aula a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+div.aula{
+	width: calc(100% - 200px);
+	height: 580px;
+	float: left;
+	padding: 60px 10%;
+	margin-bottom: 15px;
+}
+.video-aula{
+	height: 420px;
+}
+.video-aula iframe{
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+
+footer{
+	padding: 10px;
+	width: 100%;
+	background-color: #1565C0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+}
+footer p{
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+@media screen and (max-width: 900px){
+	.video-aula{
+		max-width: 400px;
+		max-height: 255px;
+		
+	}
+}
+
+@media screen and (max-width: 768px){
+	.w25{
+		width: 50%;
+	}
+	header{
+		left: 0;
+		width: 100%;
+	}
+	div.video{
+		width: 708px;
+		height: 400px;
+		margin: 15px auto;
+	}
+	div.aula{
+		padding: 60px 8%;
+	}
+
+
+}
+
+@media screen and (max-width: 500px){
+	div.video{
+		width: 531px;
+		height: 300px;
+		margin: 15px auto;
+	}
+	div.aula{
+		width: 100%;
+		padding: 30px 5%;
+	}
+	div.menu{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.box-content{
+		padding: 8px 2%;
+	}
+
+	.box-metrica-wraper h2{
+	font-size: 24px;
+	}
+
+	.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 22px;
+	}
+
+	.menu-wraper{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.items-menu a{
+		font-size: 15px;
+	}
+}

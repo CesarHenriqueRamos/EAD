@@ -10,7 +10,9 @@ Router::get('/',function() use ($homeController){
 	$homeController->index();
 });
 
-
+Router::get('/campus',function() use ($homeController){
+	$homeController->aulaCurso();
+});
 
 
 ?>
